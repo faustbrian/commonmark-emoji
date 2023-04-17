@@ -8,6 +8,7 @@ use League\CommonMark\Node\Inline\Text;
 use League\CommonMark\Parser\Inline\InlineParserInterface;
 use League\CommonMark\Parser\Inline\InlineParserMatch;
 use League\CommonMark\Parser\InlineParserContext;
+use PreemStudio\Emoji\Emoji;
 
 final class EmojiParser implements InlineParserInterface
 {
@@ -42,7 +43,9 @@ final class EmojiParser implements InlineParserInterface
             return false;
         }
 
-        $inlineContext->getContainer()->appendChild(new Text(Emoji::getCharacter(\mb_substr($identifier, 0, -1))));
+        $emoji = Emoji::fromString(\mb_substr($identifier, 0, -1));
+
+        $inlineContext->getContainer()->appendChild(new Text($emoji->value));
 
         return true;
     }

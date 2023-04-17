@@ -18,8 +18,8 @@
     "require": {
         "php": "^8.2",
         "illuminate/contracts": "^10.0",
-        "preemstudio/laravel-jetpack": "^2.0",
-        "spatie/emoji": "^4.0"
+        "preemstudio/emoji": "^1.0",
+        "preemstudio/laravel-jetpack": "^2.0"
     },
     "require-dev": {
         "ergebnis/composer-normalize": "^2.2",

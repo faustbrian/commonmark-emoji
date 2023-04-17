@@ -5,12 +5,12 @@ declare(strict_types=1);
 namespace PreemStudio\CommonMarkEmoji\Tests;
 
 use League\CommonMark\CommonMarkConverter;
-use PreemStudio\CommonMarkEmoji\Emoji;
 use PreemStudio\CommonMarkEmoji\EmojiParser;
+use PreemStudio\Emoji\Emoji;
 
-it('should parse with valid emojis', function (string $actual, string $expected): void {
+it('should parse with valid emojis', function (string $actual, Emoji $expected): void {
     $input = \sprintf('Hello :%s: World', $actual);
-    $expected = \sprintf('<p>Hello %s World</p>', $expected);
+    $expected = \sprintf('<p>Hello %s World</p>', $expected->value);
 
     $converter = new CommonMarkConverter();
     $converter->getEnvironment()->addInlineParser(new EmojiParser());
