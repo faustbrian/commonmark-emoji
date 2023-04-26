@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Tests\Unit;
 
-use League\CommonMark\Environment\Environment;
 use BombenProdukt\CommonMarkEmoji\EmojiExtension;
 use BombenProdukt\CommonMarkEmoji\EmojiParser;
+use League\CommonMark\Environment\Environment;
 
 it('should register the extension', function (): void {
     $environment = new Environment();

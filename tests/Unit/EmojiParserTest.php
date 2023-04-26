@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace BombenProdukt\CommonMarkEmoji\Tests;
 
-use League\CommonMark\CommonMarkConverter;
 use BombenProdukt\CommonMarkEmoji\EmojiParser;
 use BombenProdukt\Emoji\Emoji;
+use League\CommonMark\CommonMarkConverter;
 
 it('should parse with valid emojis', function (string $actual, Emoji $expected): void {
     $input = \sprintf('Hello :%s: World', $actual);
