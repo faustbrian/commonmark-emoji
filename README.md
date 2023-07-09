@@ -4,20 +4,6 @@
     </a>
 </p>
 
-<p align="center">
-    <a href="https://github.com/faustbrian/commonmark-emoji/actions">
-        <img src="https://badge.sh/github/check-runs/BombenProdukt/commonmark-emoji" alt="Checks" />
-    </a>
-    <a href="https://packagist.org/packages/bombenprodukt/commonmark-emoji">
-        <img src="https://badge.sh/packagist/downloads/BombenProdukt/commonmark-emoji" alt="Downloads" />
-    </a>
-    <a href="https://packagist.org/packages/bombenprodukt/commonmark-emoji">
-        <img src="https://badge.sh/packagist/version/BombenProdukt/commonmark-emoji" alt="Version" />
-    </a>
-    <a href="https://packagist.org/packages/bombenprodukt/commonmark-emoji">
-        <img src="https://badge.sh/packagist/license/BombenProdukt/commonmark-emoji" alt="License" />
-    </a>
-</p>
 
 ## About CommonMark Emojis
 
