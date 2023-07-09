@@ -14,7 +14,7 @@
             "role": "Developer"
         }
     ],
-    "homepage": "https://github.com/BombenProdukt/commonmark-emoji",
+    "homepage": "https://github.com/faustbrian/commonmark-emoji",
     "require": {
         "php": "^8.2",
         "illuminate/contracts": "^10.0",
