@@ -1,0 +1,54 @@
+{
+    "name": "basecodeoy/commonmark-emoji",
+    "description": "A package to make use of emojis with CommonMark.",
+    "license": "MIT",
+    "keywords": [
+        "BaseCode Oy",
+        "laravel",
+        "commonmark-emoji"
+    ],
+    "authors": [
+        {
+            "name": "Brian Faust",
+            "email": "hello@basecode.sh",
+            "role": "Developer"
+        }
+    ],
+    "homepage": "https://github.com/basecodeoy/commonmark-emoji",
+    "require": {
+        "php": "^8.3",
+        "basecodeoy/emoji": "^1.0.0",
+        "illuminate/contracts": "^11.0"
+    },
+    "require-dev": {
+        "basecodeoy/standards": "^1.0.5"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "BaseCodeOy\\CommonMarkEmoji\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "ergebnis/composer-normalize": true,
+            "infection/extension-installer": true,
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        },
+        "sort-packages": true
+    },
+    "scripts": {
+        "post-autoload-dump": "@php ./vendor/bin/testbench package:discover --ansi",
+        "analyse": "vendor/bin/phpstan analyse",
+        "format": "vendor/bin/php-cs-fixer fix",
+        "test": "vendor/bin/pest",
+        "test-coverage": "vendor/bin/pest --coverage"
+    }
+}
