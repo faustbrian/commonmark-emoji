@@ -1,0 +1,16 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Cannot call method in\\(\\) on iterable\\<SplFileInfo\\>\\.$#"
+			count: 1
+			path: .php-cs-fixer.php
+
+		-
+			message: "#^Undefined variable\\: \\$this$#"
+			count: 1
+			path: tests/Pest.php
+
+		-
+			message: "#^Parameter \\#1 \\.\\.\\.\\$data of method Pest\\\\PendingCalls\\\\TestCall\\:\\:with\\(\\) expects array\\<Closure\\|iterable\\<int\\|string, mixed\\>\\|string\\>\\|Closure\\|string, Illuminate\\\\Support\\\\Collection\\<int, array\\{string, BaseCodeOy\\\\Emoji\\\\Emoji\\}\\> given\\.$#"
+			count: 1
+			path: tests/Unit/EmojiParserTest.php

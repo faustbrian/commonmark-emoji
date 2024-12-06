@@ -1,0 +1,58 @@
+{
+    "name": "basecodeoy/commonmark-emoji",
+    "description": "A package to make use of emojis with CommonMark.",
+    "license": "MIT",
+    "type": "library",
+    "keywords": [
+        "BaseCode Oy",
+        "laravel",
+        "commonmark-emoji"
+    ],
+    "authors": [
+        {
+            "name": "Brian Faust",
+            "email": "hello@basecode.sh",
+            "role": "Developer"
+        }
+    ],
+    "homepage": "https://github.com/basecodeoy/commonmark-emoji",
+    "support": {
+        "issues": "https://github.com/basecodeoy/commonmark-emoji/issues",
+        "source": "https://github.com/basecodeoy/commonmark-emoji",
+        "security": "https://github.com/basecodeoy/commonmark-emoji/blob/main/.github/SECURITY.md"
+    },
+    "require": {
+        "php": "^8.3",
+        "ext-mbstring": "*",
+        "basecodeoy/crate": "^1.0",
+        "basecodeoy/emoji": "^1.0.0",
+        "illuminate/contracts": "^11.0",
+        "league/commonmark": "^2.5.3"
+    },
+    "require-dev": {
+        "basecodeoy/standards": "^1.1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "BaseCodeOy\\CommonMarkEmoji\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "ergebnis/composer-normalize": true,
+            "infection/extension-installer": true,
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        },
+        "audit": {
+            "abandoned": "report"
+        },
+        "preferred-install": "dist",
+        "sort-packages": true
+    }
+}
