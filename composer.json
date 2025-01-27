@@ -27,7 +27,7 @@
         "basecodeoy/crate": "^1.0",
         "basecodeoy/emoji": "^1.0.0",
         "illuminate/contracts": "^11.0",
-        "league/commonmark": "^2.5.3"
+        "league/commonmark": "^2.6.1"
     },
     "require-dev": {
         "basecodeoy/standards": "^1.1.1"
